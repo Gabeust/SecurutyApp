@@ -38,6 +38,7 @@ public class JwtValidator extends OncePerRequestFilter {
      * Método que intercepta todas las peticiones entrantes.
      * Si hay un JWT válido en el header Authorization, se autentica al usuario en el contexto de Spring Security.
      */
+
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
 
