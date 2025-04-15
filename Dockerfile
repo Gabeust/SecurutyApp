@@ -10,7 +10,7 @@ FROM azul/zulu-openjdk:24-jre
 
 WORKDIR /app
 
-COPY target/security-0.0.1-SNAPSHOT.jar app.jar
+COPY --from=build /app/target/security-0.0.1-SNAPSHOT.jar app.jar
 
 EXPOSE 8080
 
